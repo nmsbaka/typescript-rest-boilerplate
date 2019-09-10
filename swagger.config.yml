@@ -17,3 +17,5 @@ swagger:
       type: apiKey
       in: header
       name: Authorization
+  ignore:
+    - /node_modules/**

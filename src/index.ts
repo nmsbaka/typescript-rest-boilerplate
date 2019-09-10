@@ -1,10 +1,9 @@
-'use strict';
+'use strict'
 
-import { start } from './start';
+import { start } from './start'
+import logger from './utils/logger'
 
-start()
-    .catch((err) => {
-        // tslint:disable-next-line:no-console
-        console.error(`Error starting server: ${err.message}`);
-        process.exit(-1);
-    });
+start().catch(err => {
+  logger.error(`Error starting server: ${err.message}`)
+  process.exit(-1)
+})
